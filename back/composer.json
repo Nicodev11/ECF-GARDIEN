@@ -1,0 +1,22 @@
+{
+    "name": "nicolas/back",
+    "description": "Partie back de l'application du restaurant",
+    "autoload": {
+        "psr-4": {
+            "Nicolas\\Back\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nicolas Gardien",
+            "email": "Nicolasgardien.developpeur@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        }
+    }
+}
