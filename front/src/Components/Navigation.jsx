@@ -4,8 +4,9 @@ import '../assets/fonts/DancingScript-Regular.ttf'
 import styled from "styled-components";
 
 const Navigation = () => {
+
   return (
-    <Nav className="navbar navbar-expand-lg p-3 mb-2">
+    <Nav className="navbar navbar-expand-lg bg-dark p-3">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -49,11 +50,9 @@ const Navigation = () => {
 
 const Nav = styled.div`
 
-  position: absolute;
   background-color: #f0f8ff85;
   top: 0;
   width: 100%;
-  z-index: 2;
 
   .navbar-brand {
     img {
@@ -70,12 +69,24 @@ const Nav = styled.div`
 
   .nav-link {
     font-family: 'fontMenu';
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: orange;
+    transition: 1s;
+
+    :hover {
+      font-size: 2.1rem;
+      transition: 1s;
+      color: #d38900;
+    }
   }
   .nav-link.active {
     color: orange;
     border-bottom: 3px solid orange;
+  }
+
+  .navbar-toggler {
+    background: #d38900;
+    color: white;
   }
 `;
 
